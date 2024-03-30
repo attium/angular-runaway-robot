@@ -8,7 +8,7 @@ export const STATE_WISE_CLUES: CluesByState = {
     },
      {
       clue: 'He said he is going to the southernmost point of India',
-      info: 'Indira Point, on the Great Nicobar Island, is the southernmost point of the Indian territory' 
+      info: 'Indira Point, on the Great Nicobar Island, is the southernmost point of the Indian territory.' 
     },
   ],
   'Andhra Pradesh': [
@@ -18,7 +18,7 @@ export const STATE_WISE_CLUES: CluesByState = {
     },
     {
       clue: 'He said he was going to see a submarine museum',
-      info: "INS Kursura  submarine museum is located in Vishakapatnam, Andhra Pradesh. It is a decommissioned submarine, INS Kursura, which was later converted into a museum.",
+      info: "INS Kursura submarine museum is located in Vishakapatnam, Andhra Pradesh. It is a decommissioned submarine, INS Kursura, which was later converted into a museum.",
     },
   ],
   'Arunachal Pradesh': [
@@ -123,7 +123,7 @@ export const STATE_WISE_CLUES: CluesByState = {
     },
     {
       clue: 'He said he is going to Dharmashala',
-      info: 'Dharmashala, in Himachal Pradesh, is a tourist and spiritual center,  and is the home of the Dalai Lama',
+      info: 'Dharmashala, in Himachal Pradesh, is a tourist and spiritual center, and the home of the Dalai Lama',
     },
   ],
   'Jammu and Kashmir': [
@@ -133,7 +133,7 @@ export const STATE_WISE_CLUES: CluesByState = {
     },
       {
       clue: 'He said he wanted to go skiing.',
-      info: 'Gulmarg, meaning meadow of flowers is a famous tourist destiation in Kashir. In winter, it is covered with a thick blanket of snow, which makes it ideal for skiing.',
+      info: 'Gulmarg, meaning meadow of flowers is a famous tourist destiation in Jammu and Kashmir. In winter, it is covered with a thick blanket of snow, which makes it ideal for skiing.',
     },
     
   ],
@@ -166,6 +166,10 @@ export const STATE_WISE_CLUES: CluesByState = {
     {
       clue : 'He said he wanted to go to a coffee estate and eat pepper.',
       info : 'The towns of Coorg and Chikmagalur in Karnataka are famous for growing coffee.'
+    },
+     {
+      clue : 'He was talking about seeing the origin of the Kaveri',
+      info : 'The river Kaveri originates at Talakaveri on the Brahmagiri range of the Western Ghats in Kodagu district, Karnataka. The Kaveri is a major river of the Indian Peninsula and a water source for many South Indian states.'
     }
   ],
   Kerala: [
@@ -182,6 +186,10 @@ export const STATE_WISE_CLUES: CluesByState = {
     {
       clue: "He said he wanted to see the site of Mowgli's adventures. ",
       info: "Pench Tiger reserve and the surrounding areas were the setting for Rudyard Kipling's novel 'The Jungle Book'",
+    },
+      {
+      clue: "He was excited about seeing the fastest animal on land!",
+      info: "Cheetahs were once extinct in India, but we re-introduced into Kuno national park from South Africa and Namibia in 2023. Though not all survived, some have adapted to their new home and even given birth to cubs!",
     },
   ],
   Maharashtra: [
@@ -223,7 +231,7 @@ export const STATE_WISE_CLUES: CluesByState = {
   Nagaland: [
     {
       clue: 'He said he wanted to attend the Hornbill Festival',
-      info: 'The Horbill Festival, or the Festival of Festivals, takes place in Kisama, Nagaland, in the month of December every year. The various tribes of Nagaland ',
+      info: 'The Horbill Festival, or the Festival of Festivals, takes place in Kisama, Nagaland, in the month of December every year. During this festival, the various tribes of Nagaland get together to perform traditional music and dance.',
     },
   ],
   Odisha: [
@@ -321,7 +329,7 @@ export const STATE_WISE_CLUES: CluesByState = {
   'West Bengal': [
     {
       clue: 'He said he was going to visit the largest mangrove forest in the world!',
-      info: "Sundarban National Park in West Bengal is the world's largest mangrove forest. It is located in the Ganga-Brahmaputra delta , which is the largest delta in the world.",
+      info: "Sundarban National Park in West Bengal is the world's largest mangrove forest. It is located in the Ganga-Brahmaputra delta, which is the largest delta in the world.",
     },
   ],
 };
