@@ -6,11 +6,19 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said something about an active volcano',
       info: 'Barren Island, in the Andaman and Nicobar Islands, is the only active volcano in India.',
     },
+     {
+      clue: 'He said he is going to the southernmost point of India',
+      info: 'Indira Point, on the Great Nicobar Island, is the southernmost point of the Indian territory' 
+    },
   ],
   'Andhra Pradesh': [
     {
       clue: 'He said he was going to watch a satellite launch',
       info: "Most of India's satellites are launched from the Satish Dhawan Space Center in Sriharikota, Andhra Pradesh.",
+    },
+    {
+      clue: 'He said he was going to see a submarine museum',
+      info: "INS Kursura  submarine museum is located in Vishakapatnam, Andhra Pradesh. It is a decommissioned submarine, INS Kursura, which was later converted into a museum.",
     },
   ],
   'Arunachal Pradesh': [
@@ -52,6 +60,10 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said the place he was going to is the capital of two states.',
       info: 'Chandigarh is a Union Territory and also the capital of both Punjab and Haryana.',
     },
+     {
+      clue: 'He mentioned wanting to see a Rock Garden',
+      info: 'Created by Nek Chand, the Rock Garden is a famous Tourist attraction of Chandigarh. It is famous for its sculptures made of recycled material.',
+    },
   ],
   Chhattisgarh: [
     {
@@ -65,6 +77,10 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He mentioned an iron pillar that never rusts',
       info: 'The rust-resistant Iron Pillar of Delhi stands near the Qutub Minar, Delhi.',
     },
+    { 
+      clue : 'He wanted to see the National Railway Museum',
+      info : 'The National Railway Museum is located in Delhi, and displays the history of rail transport in India' 
+    }
   ],
   Goa: [
     {
@@ -75,18 +91,39 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He wanted to try some Bebinca',
       info: 'Bebinca is a layered cake that is a prepared in Goa.',
     },
+    {
+      clue: 'He wanted to see the Basilica of Bom Jesus',
+      info: 'Bom Jesus Basilica is Catholic Basilica located in Old Goa. It has been recognized as a UNESCO World Heritage Site, along with other Goan churches.',
+    },
   ],
   Gujarat: [
     {
       clue: 'He was talking about a jungle safari, and said he hoped to see a lion',
       info: 'Gir National Park, Gujarat, is the only place in the world where Asiatic lions can be found.',
     },
+     {
+      clue: 'He wanted to see the  chestnut-coloured Indian wild ass (Khur).',
+      info: 'The Indian Wild Ass Sactuary in the Little Rann of Kutch is the only home of the The chestnut-coloured Indian wild ass, or the Khur.',
+    },
   ],
-  //Haryana: [],
+  Haryana: [
+    {
+       clue: 'He wanted to see the site of the Mahabharata War.',
+      info: 'Kurukshetra, the site of the Mahabharata war, is found in Haryana.',
+    },
+    {
+       clue: 'He wanted to go to the place where three battles were fought.',
+      info: 'Panipat, in Haryana, is the site of the the three Battles of Panipat - the first in 1526, the second in 1556, and the third in 1761.',
+    }
+  ],
   'Himachal Pradesh': [
     {
       clue: 'He said he was planning to visit an apple orchard',
       info: '',
+    },
+    {
+      clue: 'He said he is going to Dharmashala',
+      info: 'Dharmashala, in Himachal Pradesh, is a tourist and spiritual center,  and is the home of the Dalai Lama',
     },
   ],
   'Jammu and Kashmir': [
@@ -94,6 +131,11 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said he wanted to try some Kawah. Can Robots even drink tea?',
       info: 'Kawah is a flavorful tea drunk in Kashmir',
     },
+      {
+      clue: 'He said he wanted to go skiing.',
+      info: 'Gulmarg, meaning meadow of flowers is a famous tourist destiation in Kashir. In winter, it is covered with a thick blanket of snow, which makes it ideal for skiing.',
+    },
+    
   ],
   //Jharkhand: [],
   Ladakh: [
@@ -118,19 +160,23 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: 'Bisi Bele Bath is a rice-based dish that is popular in the state of Karnataka.',
     },
     {
-      clue: "He said he'd better learn some Kannada phrases before his next trip",
-      info: 'Karnataka is the most widely spoken language in Karntaka.',
+      clue : 'He said he wanted to see the capital of the Vijayanagara Empire',
+      info : 'The ancient city of Hampi was thec capital of the Vijayanagara Empire. It is a UNESCO World Heritage site.'
     },
+    {
+      clue : 'He said he wanted to go to a coffee estate and eat pepper.',
+      info : 'The towns of Coorg and Chikmagalur in Karnataka are famous for growing coffee.'
+    }
   ],
   Kerala: [
     {
-      clue: "He said he'd better learn some Malayalam phrases before his next journey",
-      info: 'Malayalam is spoken in Kerala.',
+      clue : 'He said he wanted to watch a Kathakali performance',
+      info : 'Kathakali is a dance form practiced in Kerala.'
     },
     {
-      clue: 'He really wanted to try some appam and stew!',
-      info: 'Appam and coconut milk-based stew is a popular dish in Kerala',
-    },
+      clue : 'He said he wanted to learn one of the world's oldest martial arts',
+      info : 'Kalaripayattu, a form of martial arts that originated in Kerala, is one of the oldest martial arts in the world.'
+    }
   ],
   'Madhya Pradesh': [
     {
