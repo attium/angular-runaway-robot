@@ -4,6 +4,7 @@ import { STATE_WISE_CLUES } from '../utils/clues';
 import { ClueWithInfo, StateAndClue } from '../utils/types';
 import { of } from 'rxjs';
 import { STATE_WISE_INFO } from '../utils/generic-state-info';
+import { Route, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -18,21 +19,18 @@ export class StateGeneratorService {
 
   public indexOfLastCorrectState = 0;
 
-  constructor() {}
+  constructor(private router : Router) {}
 
   async initializeGame() {
-    //this.selectRandomState();
-    // this.nextState = "Karnataka";
-    this.selectedState = 'Karnataka';
-    // sessionStorage.setItem('0',  this.selectedState);
+    this.setSelectedState('Karnataka');
     this.allStatesForGame.push({
       stateName: 'Karnataka',
       stateClueAndInfo: { clue: '', info: STATE_WISE_INFO['Karnataka'] },
     });
     await this.generateThreeStates();
+    sessionStorage.setItem('allStates', JSON.stringify(this.allStatesForGame));
+    sessionStorage.setItem('index', '0');
 
-    // sessionStorage.setItem('selectedState', this.selectedState);
-    // sessionStorage.setItem()
   }
 
   generateThreeStates() {
@@ -60,8 +58,7 @@ export class StateGeneratorService {
         stateClueAndInfo: randomClue,
       });
     }
-    sessionStorage.setItem('allStates', String(this.allStatesForGame));
-    sessionStorage.setItem('index', '0');
+ 
 
     return of(true);
   }
@@ -93,8 +90,11 @@ export class StateGeneratorService {
       this.indexOfLastCorrectState = parseInt(
         indexOfLastCorrectStateInSessionStorage
       );
+      this.selectedState = sessionStorage.getItem('selectedState') || '';
       return true;
     }
+    this.router.navigate(['']);
+
     return false;
   }
 
@@ -118,6 +118,7 @@ export class StateGeneratorService {
 
   setSelectedState(state: string) {
     this.selectedState = state;
+    sessionStorage.setItem('selectedState', this.selectedState);
   }
 
 
@@ -127,5 +128,6 @@ export class StateGeneratorService {
 
   public incrementStateIndex() {
     this.indexOfLastCorrectState++;
+    sessionStorage.setItem('index',String(this.indexOfLastCorrectState) );
   }
 }

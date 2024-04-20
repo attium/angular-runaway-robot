@@ -49,7 +49,7 @@ export class NewStateComponent implements OnInit, AfterViewInit {
       this.showAnimation = false;
     }
 
-    this.imgUrl = 'assets/states/' + this.selectedState + '.png';
+    this.imgUrl = 'assets/state images/' + this.selectedState + '.jpg';
   }
 
   ngAfterViewInit() {
@@ -67,39 +67,27 @@ export class NewStateComponent implements OnInit, AfterViewInit {
   }
 
   private checkStateAndGenerateNextState() {
-    // if (this.correctState.stateName.length > 0) {
     if (this.isStateCorrect) {
       this.showTravelingRobotAnimation();
       this.stateInfo = this.correctState.stateClueAndInfo.info;
       this.speechBubbleContent = this.stateGeneratorService.getClueForState();
-      this.stateGeneratorService.incrementStateIndex();
       
-      // console.log('Next state is', this.stateGeneratorService.getNextState());
     } else {
       console.log('wrong state');
       this.stateInfo = STATE_WISE_INFO[this.selectedState];
       this.speechBubbleContent = "I haven't seen a robot here!";
     }
 
-    if (this.stateGeneratorService.indexOfLastCorrectState == 4) {
+    if (this.stateGeneratorService.indexOfLastCorrectState == 3) {
       this.showRelaxingRobotAnimation();
     }
-    // } else {
-    //   //this.stateGeneratorService.selectRandomState();
-    //   this.stateInfo = STATE_WISE_INFO[this.selectedState];
-    //   this.showTravelingRobotAnimation();
-    //   // this.speechBubbleContent =
-    //   //   this.stateGeneratorService.getClueForState();
-    // }
+ 
   }
   showRelaxingRobotAnimation() {
   this.router.navigate(['\story']);
   }
 
-  public hidePopUp() {
-    // this.showPopUp = false;
-    // this.popUpInfo = "";
-  }
+
 
   public travel() {
     this.router.navigate(['/travel']);

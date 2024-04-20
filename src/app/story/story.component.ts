@@ -32,9 +32,23 @@ export class StoryComponent implements OnInit, AfterViewInit {
   }
   
   public skip() {
-    this.router.navigate(['/new-state']);
+    if(this.indexOfLastCorrectState == 3) {
+      this.router.navigate(['']);
+    }
+    else {
+      this.router.navigate(['/new-state']);
+
+    }
   }
 
   public goBack(){
     this.location.back();  }
+
+  public newGame() {
+    sessionStorage.clear();
+    setTimeout(() => this.router.navigate(['']), 3000);
+    
+  }
 }
+
+

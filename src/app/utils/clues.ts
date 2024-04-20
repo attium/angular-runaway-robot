@@ -178,7 +178,7 @@ export const STATE_WISE_CLUES: CluesByState = {
       info : 'Kathakali is a dance form practiced in Kerala.'
     },
     {
-      clue : 'He said he wanted to learn one of the world's oldest martial arts',
+      clue : "He said he wanted to learn one of the world's oldest martial arts",
       info : 'Kalaripayattu, a form of martial arts that originated in Kerala, is one of the oldest martial arts in the world.'
     }
   ],
@@ -283,7 +283,7 @@ export const STATE_WISE_CLUES: CluesByState = {
   'Tamil Nadu': [
     {
       clue: 'He was excited about seeing the union of three seas',
-      info: 'Kanyakumari, Tamil Nadu, is the southernmost point in India. From here, one can see the meeting of the Arabian Sea, the Bay of Bengal, and the Indian Ocean.',
+      info: 'Kanyakumari, Tamil Nadu, is the southernmost tip of the Indian Peninsula. From here, one can see the meeting of the Arabian Sea, the Bay of Bengal, and the Indian Ocean.',
     },
     {
       clue: "He said he was going to the sea the longest beach in India. I hope his joints don't rust!",

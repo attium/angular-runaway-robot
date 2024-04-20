@@ -13,8 +13,8 @@ export class WelcomeComponent  {
   constructor(private stateGeneratorService : StateGeneratorService, private router : Router){}
   oldGameExists = false;
 
-  startNewGame() {
-    this.stateGeneratorService.initializeGame();
+  async startNewGame() {
+    await this.stateGeneratorService.initializeGame();
 
     this.router.navigate(['/story']);
   }

@@ -23,6 +23,10 @@ export class TravelComponent implements OnInit {
   }
 
   fly() {
+    if(JSON.parse(sessionStorage.getItem('allStates') || '')[this.stateGeneratorService.indexOfLastCorrectState + 1].stateName == this.selectedDestination )
+    {
+      this.stateGeneratorService.incrementStateIndex();
+    }
     this.stateGeneratorService.setSelectedState(this.selectedDestination);
     this.startAnimation();
     setTimeout(() => {
@@ -135,5 +139,9 @@ export class TravelComponent implements OnInit {
 
     svg.appendChild(line);
     
+  }
+
+  goBack(){
+    this.router.navigate(['/new-state']);
   }
 }
