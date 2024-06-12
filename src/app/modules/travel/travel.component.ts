@@ -23,11 +23,15 @@ export class TravelComponent implements OnInit {
   }
 
   fly() {
-    if(JSON.parse(sessionStorage.getItem('allStates') || '')[this.stateGeneratorService.indexOfLastCorrectState + 1].stateName == this.selectedDestination )
-    {
+    if (
+      JSON.parse(sessionStorage.getItem('allStates') || '')[
+        this.stateGeneratorService.indexOfLastCorrectState + 1
+      ].stateName == this.selectedDestination
+    ) {
       this.stateGeneratorService.incrementStateIndex();
     }
     this.stateGeneratorService.setSelectedState(this.selectedDestination);
+    sessionStorage.setItem('stateAlreadyVisited', 'false');
     this.startAnimation();
     setTimeout(() => {
       this.router.navigate(['/new-state']);
@@ -40,12 +44,11 @@ export class TravelComponent implements OnInit {
     (takeOffAudio as HTMLAudioElement).play();
     const currentStateOnMap =
       document.querySelectorAll("path[name='" + this.currentState + "']") || [];
-      
 
     const boundingRectOfCurrentState = (
       currentStateOnMap[0] as SVGGraphicsElement
     )?.getBBox();
-  
+
     const midXCoordinateOfCurrentState =
       boundingRectOfCurrentState.x + boundingRectOfCurrentState.height / 2;
     const midYCoordinateOfCurrentState =
@@ -94,7 +97,7 @@ export class TravelComponent implements OnInit {
     const points = document.getElementById('points');
     points?.appendChild(destinationPoint);
     points?.appendChild(sourcePoint);
-    
+
     const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     line.setAttribute('x1', midXCoordinateOfCurrentState.toString());
     line.setAttribute('y1', midYCoordinateOfCurrentState.toString());
@@ -135,13 +138,11 @@ export class TravelComponent implements OnInit {
     line.appendChild(animateY);
 
     const svg = document.getElementsByTagName('svg')[0];
- 
 
     svg.appendChild(line);
-    
   }
 
-  goBack(){
+  goBack() {
     this.router.navigate(['/new-state']);
   }
 }

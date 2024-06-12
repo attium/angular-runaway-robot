@@ -10,7 +10,6 @@ import { Route, Router } from '@angular/router';
   providedIn: 'root',
 })
 export class StateGeneratorService {
-
   private selectedState: string = '';
   private nextState: StateAndClue = {} as StateAndClue;
   private infoForCorrectState: string = '';
@@ -19,10 +18,11 @@ export class StateGeneratorService {
 
   public indexOfLastCorrectState = 0;
 
-  constructor(private router : Router) {}
+  constructor(private router: Router) {}
 
   async initializeGame() {
     this.setSelectedState('Karnataka');
+    this.allStatesForGame = [];
     this.allStatesForGame.push({
       stateName: 'Karnataka',
       stateClueAndInfo: { clue: '', info: STATE_WISE_INFO['Karnataka'] },
@@ -30,7 +30,6 @@ export class StateGeneratorService {
     await this.generateThreeStates();
     sessionStorage.setItem('allStates', JSON.stringify(this.allStatesForGame));
     sessionStorage.setItem('index', '0');
-
   }
 
   generateThreeStates() {
@@ -58,14 +57,13 @@ export class StateGeneratorService {
         stateClueAndInfo: randomClue,
       });
     }
- 
 
     return of(true);
   }
 
   getClueForState(): string {
-  ;
-    return this.allStatesForGame[this.indexOfLastCorrectState+1]?.stateClueAndInfo.clue;
+    return this.allStatesForGame[this.indexOfLastCorrectState + 1]
+      ?.stateClueAndInfo.clue;
   }
 
   setNextState() {
@@ -121,13 +119,12 @@ export class StateGeneratorService {
     sessionStorage.setItem('selectedState', this.selectedState);
   }
 
-
   getInfoForCorrectState() {
     return STATE_WISE_INFO[''];
   }
 
   public incrementStateIndex() {
     this.indexOfLastCorrectState++;
-    sessionStorage.setItem('index',String(this.indexOfLastCorrectState) );
+    sessionStorage.setItem('index', String(this.indexOfLastCorrectState));
   }
 }

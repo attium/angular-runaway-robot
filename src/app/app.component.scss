@@ -1,43 +1,43 @@
+header {
+  height: 70px;
+  padding: 15px;
+  background-color: var(--primary);
+  position: relative;
+}
 
-header, footer {
-
-    height: 70px;
-    padding: 15px;
-    background-color: var(--primary);
-    position: relative;
-
+footer {
+  height: 10px;
+  padding: 15px;
+  background-color: var(--primary);
+  position: relative;
 }
 
 #game-content {
-    position: relative;
-    height: calc(100% - 230px);
-    padding: 15px;
+  position: relative;
+  height: calc(100% - 170px);
+  padding: 15px;
 }
 
 #game-screen {
-  
-    position: absolute;
-    margin: 0;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    // margin: 0px 15px;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .header-content {
-    color: var(--button-color);
-    padding: 15px;
+  color: var(--button-color);
+  padding: 15px;
 }
 
-
 a.header-content {
-    font-size: 20px;
-    text-decoration: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 a.game-name {
-    font-family: Chicle;
-    font-size: 50px;
+  font-family: Chicle;
+  font-size: 50px;
 }
-

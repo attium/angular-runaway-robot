@@ -64,14 +64,18 @@ export class NewStateComponent implements OnInit, AfterViewInit {
     Promise.resolve(animationFinishedPromise).then((finished) => {
       this.showAnimation = false;
     });
+    sessionStorage.setItem('stateAlreadyVisited', 'true');
   }
 
-  private checkStateAndGenerateNextState() {
+  private async checkStateAndGenerateNextState() {
     if (this.isStateCorrect) {
-      this.showTravelingRobotAnimation();
+      if (sessionStorage.getItem('stateAlreadyVisited') == 'false') {
+        await this.showTravelingRobotAnimation();
+      } else {
+        this.showAnimation = false;
+      }
       this.stateInfo = this.correctState.stateClueAndInfo.info;
       this.speechBubbleContent = this.stateGeneratorService.getClueForState();
-      
     } else {
       console.log('wrong state');
       this.stateInfo = STATE_WISE_INFO[this.selectedState];
@@ -81,13 +85,10 @@ export class NewStateComponent implements OnInit, AfterViewInit {
     if (this.stateGeneratorService.indexOfLastCorrectState == 3) {
       this.showRelaxingRobotAnimation();
     }
- 
   }
   showRelaxingRobotAnimation() {
-  this.router.navigate(['\story']);
+    this.router.navigate(['story']);
   }
-
-
 
   public travel() {
     this.router.navigate(['/travel']);
@@ -96,7 +97,9 @@ export class NewStateComponent implements OnInit, AfterViewInit {
   public askQuestions() {
     //add audios for right & wrong state
 
-      setTimeout(() => {this.showStateInfo = false}, 1000);
+    setTimeout(() => {
+      this.showStateInfo = false;
+    }, 1000);
   }
 
   backToState() {

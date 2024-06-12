@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Location } from "@angular/common";
+import { Location } from '@angular/common';
 import { StateGeneratorService } from '../services/state-generator.service';
 
 @Component({
@@ -9,12 +9,16 @@ import { StateGeneratorService } from '../services/state-generator.service';
   styleUrls: ['./story.component.scss'],
 })
 export class StoryComponent implements OnInit, AfterViewInit {
-  public indexOfLastCorrectState : number = -1; 
-  constructor(private router: Router, private location : Location, private stateGeneratorService: StateGeneratorService ) {}
+  public indexOfLastCorrectState: number = -1;
+  constructor(
+    private router: Router,
+    private location: Location,
+    private stateGeneratorService: StateGeneratorService
+  ) {}
 
   ngOnInit() {
-    this.indexOfLastCorrectState = this.stateGeneratorService.indexOfLastCorrectState;
-   
+    this.indexOfLastCorrectState =
+      this.stateGeneratorService.indexOfLastCorrectState;
   }
 
   ngAfterViewInit() {
@@ -30,25 +34,22 @@ export class StoryComponent implements OnInit, AfterViewInit {
   public startGame() {
     setTimeout(() => this.router.navigate(['/new-state']), 3000);
   }
-  
-  public skip() {
-    if(this.indexOfLastCorrectState == 3) {
-      this.router.navigate(['']);
-    }
-    else {
-      this.router.navigate(['/new-state']);
 
+  public skip() {
+    if (this.indexOfLastCorrectState == 3) {
+      this.router.navigate(['']);
+      sessionStorage.clear();
+    } else {
+      this.router.navigate(['/new-state']);
     }
   }
 
-  public goBack(){
-    this.location.back();  }
+  public goBack() {
+    this.location.back();
+  }
 
   public newGame() {
     sessionStorage.clear();
     setTimeout(() => this.router.navigate(['']), 3000);
-    
   }
 }
-
-

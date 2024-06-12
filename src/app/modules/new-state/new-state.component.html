@@ -3,19 +3,14 @@
         <div class="state-name">
             {{ selectedState }}
         </div>
-
         <div class="state-img">
             <img [src]="imgUrl">
-
         </div>
-
     </div>
 
     <div class="state-info-and-buttons">
         <div class="state-info" *ngIf="showStateInfo; else askQuestion">
-
             {{stateInfo}}
-
         </div>
 
         <ng-template #askQuestion>
@@ -25,20 +20,19 @@
                 </div>
                 <img src="assets/svgs/tourist-svgrepo-com.svg" class="tourist-image">
             </div>
-
         </ng-template>
 
         <ng-container *ngIf="stateGeneratorService.indexOfLastCorrectState!=4">
             <div class="buttons">
                 <div class="button-container">
-                    <button class="button-round" (click)="askQuestions()" *ngIf="showStateInfo; else backButton">
+                    <button class="button-round" (click)="askQuestions()" *ngIf="showStateInfo; else backButton"
+                        title="Ask questions">
                         <span class="material-symbols-outlined">
                             contact_support
                         </span>
                     </button>
-
                     <ng-template #backButton>
-                        <button class="button-round" (click)="backToState()">
+                        <button class="button-round" (click)="backToState()" title="Back to State">
                             <span class="material-symbols-outlined">
                                 arrow_back
                             </span>
@@ -47,7 +41,7 @@
 
                 </div>
                 <div class="button-container">
-                    <button class="button-round" (click)="travel()">
+                    <button class="button-round" (click)="travel()" title="Travel">
                         <span class="material-symbols-outlined">
                             travel_explore
                         </span>
@@ -62,10 +56,3 @@
 <div class="state-container" *ngIf="showAnimation">
     <img src="assets/video/traveling-robot-white.gif" id="traveling-robot-gif">
 </div>
-
-
-
-
-
-
-

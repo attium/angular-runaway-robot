@@ -109,7 +109,7 @@ export const STATE_WISE_CLUES: CluesByState = {
   Haryana: [
     {
        clue: 'He wanted to see the site of the Mahabharata War.',
-      info: 'Kurukshetra, the site of the Mahabharata war, is found in Haryana.',
+      info: 'Kurukshetra, the site of the Mahabharata war, is located in the stte of Haryana.',
     },
     {
        clue: 'He wanted to go to the place where three battles were fought.',
