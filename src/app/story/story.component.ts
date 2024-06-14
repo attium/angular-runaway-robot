@@ -44,9 +44,6 @@ export class StoryComponent implements OnInit, AfterViewInit {
     }
   }
 
-  public goBack() {
-    this.location.back();
-  }
 
   public newGame() {
     sessionStorage.clear();

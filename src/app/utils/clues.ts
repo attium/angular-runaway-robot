@@ -6,9 +6,9 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said something about an active volcano',
       info: 'Barren Island, in the Andaman and Nicobar Islands, is the only active volcano in India.',
     },
-     {
+    {
       clue: 'He said he is going to the southernmost point of India',
-      info: 'Indira Point, on the Great Nicobar Island, is the southernmost point of the Indian territory.' 
+      info: 'Indira Point, on the Great Nicobar Island, is the southernmost point of the Indian territory.',
     },
   ],
   'Andhra Pradesh': [
@@ -18,7 +18,7 @@ export const STATE_WISE_CLUES: CluesByState = {
     },
     {
       clue: 'He said he was going to see a submarine museum',
-      info: "INS Kursura submarine museum is located in Vishakapatnam, Andhra Pradesh. It is a decommissioned submarine, INS Kursura, which was later converted into a museum.",
+      info: 'INS Kursura submarine museum is located in Vishakapatnam, Andhra Pradesh. It is a decommissioned submarine, INS Kursura, which was later converted into a museum.',
     },
   ],
   'Arunachal Pradesh': [
@@ -51,16 +51,16 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: 'Nalanda University, in modern-day Bihar, is one of the earliest learning centers of the world',
     },
     {
-      clue: "He said he wanted to see some Madhubhani art",
-      info : "Madhubhani paintings are a rural art form traditionally practiced by women from Bihar."
-    }
+      clue: 'He said he wanted to see some Madhubhani art',
+      info: 'Madhubhani paintings are a rural art form traditionally practiced by women from Bihar.',
+    },
   ],
   Chandigarh: [
     {
       clue: 'He said the place he was going to is the capital of two states.',
       info: 'Chandigarh is a Union Territory and also the capital of both Punjab and Haryana.',
     },
-     {
+    {
       clue: 'He mentioned wanting to see a Rock Garden',
       info: 'Created by Nek Chand, the Rock Garden is a famous Tourist attraction of Chandigarh. It is famous for its sculptures made of recycled material.',
     },
@@ -71,16 +71,16 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: "Chitrakote falls on the Indravati river is India's widest waterfall, located in Chattisgarh. The waterfall is known for its distinct horseshoe shape.",
     },
   ],
-   'Dadra and Nagar Haveli and Daman and Diu': [],
+  'Dadra and Nagar Haveli and Daman and Diu': [],
   Delhi: [
     {
       clue: 'He mentioned an iron pillar that never rusts',
       info: 'The rust-resistant Iron Pillar of Delhi stands near the Qutub Minar, Delhi.',
     },
-    { 
-      clue : 'He wanted to see the National Railway Museum',
-      info : 'The National Railway Museum is located in Delhi, and displays the history of rail transport in India' 
-    }
+    {
+      clue: 'He wanted to see the National Railway Museum',
+      info: 'The National Railway Museum is located in Delhi, and displays the history of rail transport in India',
+    },
   ],
   Goa: [
     {
@@ -101,20 +101,20 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He was talking about a jungle safari, and said he hoped to see a lion',
       info: 'Gir National Park, Gujarat, is the only place in the world where Asiatic lions can be found.',
     },
-     {
+    {
       clue: 'He wanted to see the  chestnut-coloured Indian wild ass (Khur).',
       info: 'The Indian Wild Ass Sactuary in the Little Rann of Kutch is the only home of the The chestnut-coloured Indian wild ass, or the Khur.',
     },
   ],
   Haryana: [
     {
-       clue: 'He wanted to see the site of the Mahabharata War.',
+      clue: 'He wanted to see the site of the Mahabharata War.',
       info: 'Kurukshetra, the site of the Mahabharata war, is located in the stte of Haryana.',
     },
     {
-       clue: 'He wanted to go to the place where three battles were fought.',
+      clue: 'He wanted to go to the place where three battles were fought.',
       info: 'Panipat, in Haryana, is the site of the the three Battles of Panipat - the first in 1526, the second in 1556, and the third in 1761.',
-    }
+    },
   ],
   'Himachal Pradesh': [
     {
@@ -131,11 +131,10 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said he wanted to try some Kawah. Can Robots even drink tea?',
       info: 'Kawah is a flavorful tea drunk in Kashmir',
     },
-      {
+    {
       clue: 'He said he wanted to go skiing.',
       info: 'Gulmarg, meaning meadow of flowers is a famous tourist destiation in Jammu and Kashmir. In winter, it is covered with a thick blanket of snow, which makes it ideal for skiing.',
     },
-    
   ],
   //Jharkhand: [],
   Ladakh: [
@@ -160,36 +159,36 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: 'Bisi Bele Bath is a rice-based dish that is popular in the state of Karnataka.',
     },
     {
-      clue : 'He said he wanted to see the capital of the Vijayanagara Empire',
-      info : 'The ancient city of Hampi was thec capital of the Vijayanagara Empire. It is a UNESCO World Heritage site.'
+      clue: 'He said he wanted to see the capital of the Vijayanagara Empire',
+      info: 'The ancient city of Hampi was thec capital of the Vijayanagara Empire. It is a UNESCO World Heritage site.',
     },
     {
-      clue : 'He said he wanted to go to a coffee estate and eat pepper.',
-      info : 'The towns of Coorg and Chikmagalur in Karnataka are famous for growing coffee.'
+      clue: 'He said he wanted to go to a coffee estate and eat pepper.',
+      info: 'The towns of Coorg and Chikmagalur in Karnataka are famous for growing coffee.',
     },
-     {
-      clue : 'He was talking about seeing the origin of the Kaveri',
-      info : 'The river Kaveri originates at Talakaveri on the Brahmagiri range of the Western Ghats in Kodagu district, Karnataka. The Kaveri is a major river of the Indian Peninsula and a water source for many South Indian states.'
-    }
+    {
+      clue: 'He was talking about seeing the origin of the Kaveri',
+      info: 'The river Kaveri originates at Talakaveri on the Brahmagiri range of the Western Ghats in Kodagu district, Karnataka. The Kaveri is a major river of the Indian Peninsula and a water source for many South Indian states.',
+    },
   ],
   Kerala: [
     {
-      clue : 'He said he wanted to watch a Kathakali performance',
-      info : 'Kathakali is a dance form practiced in Kerala.'
+      clue: 'He said he wanted to watch a Kathakali performance',
+      info: 'Kathakali is a dance form practiced in Kerala.',
     },
     {
-      clue : "He said he wanted to learn one of the world's oldest martial arts",
-      info : 'Kalaripayattu, a form of martial arts that originated in Kerala, is one of the oldest martial arts in the world.'
-    }
+      clue: "He said he wanted to learn one of the world's oldest martial arts",
+      info: 'Kalaripayattu, a form of martial arts that originated in Kerala, is one of the oldest martial arts in the world.',
+    },
   ],
   'Madhya Pradesh': [
     {
       clue: "He said he wanted to see the site of Mowgli's adventures. ",
       info: "Pench Tiger reserve and the surrounding areas were the setting for Rudyard Kipling's novel 'The Jungle Book'",
     },
-      {
-      clue: "He was excited about seeing the fastest animal on land!",
-      info: "Cheetahs were once extinct in India, but we re-introduced into Kuno national park from South Africa and Namibia in 2023. Though not all survived, some have adapted to their new home and even given birth to cubs!",
+    {
+      clue: 'He was excited about seeing the fastest animal on land!',
+      info: 'Cheetahs were once extinct in India, but we re-introduced into Kuno national park from South Africa and Namibia in 2023. Though not all survived, some have adapted to their new home and even given birth to cubs!',
     },
   ],
   Maharashtra: [
@@ -218,9 +217,9 @@ export const STATE_WISE_CLUES: CluesByState = {
       info: 'Mawsynram in Meghalaya recieves the highest rainfall in the world.',
     },
     {
-      clue : "He said he wanted to see a 'Living Root Bridge'",
-      info : "Living root bridges are made by the people of Meghalaya. They are made by weaving together the arial roots of living trees on either side of a river."
-    }
+      clue: "He said he wanted to see a 'Living Root Bridge'",
+      info: 'Living root bridges are made by the people of Meghalaya. They are made by weaving together the arial roots of living trees on either side of a river.',
+    },
   ],
   Mizoram: [
     {
@@ -243,7 +242,7 @@ export const STATE_WISE_CLUES: CluesByState = {
       clue: 'He said he was going to see a chariot-shaped monument',
       info: 'The Konark Sun Temple in Odisha represents the chariot of the Sun God, Surya. The 24 intricately carved wheels of the chariot also work as sundials.',
     },
-     {
+    {
       clue: 'He wanted to see an Olive Ridley turtle!',
       info: "The coast of Odisha is the world's largest mass nesting-ground for Olive Ridley turtles. During the nesting season, lakhs of Olive Ridley turtles come ashore to build nests and lay eggs on the coast of Odisha. The Olive Ridley turtle is an endangered species, and the government, locals and other organizations are making efforts to protect it.  ",
     },

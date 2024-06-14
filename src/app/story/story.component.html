@@ -1,5 +1,4 @@
 <div class='video-container'>
-    <button class="button-round" (click)="goBack()"> Back</button>
     <ng-container *ngIf="indexOfLastCorrectState==3; else robotStory">
         <video src='assets/video/tejas-is-found.mp4' autoplay muted (ended)="newGame()">
 
